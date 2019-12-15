@@ -2,7 +2,7 @@ import React from 'react'
 import retailLogo from '../assets/retailway.png'
 import searchLogo from '../assets/searchLogo.png'
 import classes from './NavBar.module.css'
-import { Container, Row, Col, Form } from 'react-bootstrap'
+import { Container, Row, Col, Form, Navbar} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
@@ -24,21 +24,36 @@ export default function NavBar() {
                 <img style={{ width: '30', height: '43px', paddingTop: '3px', paddingBottom: '2px' }} src={searchLogo} alt='searchLogo' />
                 <Col style={{ paddingTop: '50px' }}>
                     <Row className={classes.colStyle}>
-                        <Col xs={{offset:2,span:4}}>
-                            <FontAwesomeIcon style={{width: '90px', height: '30px' }} icon={faUser} />
+                        <Col xs={{ offset: 2, span: 4 }}>
+                            <FontAwesomeIcon style={{ width: '90px', height: '30px' }} icon={faUser} />
                         </Col>
-                        <Col xs={{offset:0,span:4}}>
+                        <Col xs={{ offset: 0, span: 4 }}>
                             <FontAwesomeIcon style={{ width: '90px', height: '30px' }} icon={faShoppingCart} />
                         </Col>
                     </Row>
                     <Row className={classes.colStyle}>
-                        <Col xs={{offset:2,span:4}}>
-                            <p style={{width:'90px'}}>Login</p>
+                        <Col xs={{ offset: 2, span: 4 }}>
+                            <p style={{ width: '90px' }}>Login</p>
                         </Col>
-                        <Col xs={{offset:0,span:4}}>
-                            <p style={{width:'120px' ,paddingRight:'18px'}}>Shopping Cart</p>
+                        <Col xs={{ offset: 0, span: 4 }}>
+                            <p style={{ width: '120px', paddingRight: '18px' }}>Shopping Cart</p>
                         </Col>
                     </Row>
+                </Col>
+            </Row>
+            <Row style={{padding:0}}>
+                <Col>
+                    <Navbar style={{display:'flex',justifyContent: 'space-between'}} bg="light" variant="light">
+                        <Navbar.Brand href="#Woman">Woman</Navbar.Brand>
+                        <Navbar.Brand href="#Man">Man</Navbar.Brand>
+                        <Navbar.Brand href="#Kid">Kid</Navbar.Brand>
+                        <Navbar.Brand href="#Shoes&Cases">Shoes&Cases</Navbar.Brand>
+                        <Navbar.Brand href="#Clocks&Accessories">Clocks&Accessories</Navbar.Brand>
+                        <Navbar.Brand href="#Cosmetics">Cosmetics</Navbar.Brand>
+                        <Navbar.Brand href="#Home&Life">Home&Life</Navbar.Brand>
+                        <Navbar.Brand href="#Electronics">Electronics</Navbar.Brand>
+                        <Navbar.Brand href="#Supermarket">Supermarket</Navbar.Brand>
+                    </Navbar>
                 </Col>
             </Row>
         </Container>
