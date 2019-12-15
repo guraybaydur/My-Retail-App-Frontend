@@ -2,9 +2,10 @@ import React from 'react'
 import retailLogo from '../assets/retailway.png'
 import searchLogo from '../assets/searchLogo.png'
 import classes from './NavBar.module.css'
-import { Container, Row, Col, Form, Navbar} from 'react-bootstrap'
+import { Container, Row, Col, Form, Navbar } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import electronicsImage from '../assets/electronics1.jpg'
 
 export default function NavBar() {
     return (
@@ -41,9 +42,9 @@ export default function NavBar() {
                     </Row>
                 </Col>
             </Row>
-            <Row style={{padding:0}}>
+            <Row style={{ padding: 0 }}>
                 <Col>
-                    <Navbar style={{display:'flex',justifyContent: 'space-between'}} bg="light" variant="light">
+                    <Navbar style={{ display: 'flex', justifyContent: 'space-between' }} bg="light" variant="light">
                         <Navbar.Brand href="#Woman">Woman</Navbar.Brand>
                         <Navbar.Brand href="#Man">Man</Navbar.Brand>
                         <Navbar.Brand href="#Kid">Kid</Navbar.Brand>
@@ -54,6 +55,11 @@ export default function NavBar() {
                         <Navbar.Brand href="#Electronics">Electronics</Navbar.Brand>
                         <Navbar.Brand href="#Supermarket">Supermarket</Navbar.Brand>
                     </Navbar>
+                </Col>
+            </Row>
+            <Row style={{marginTop:'10px'}}>
+                <Col>
+                    <img style={{width:'100%', height:'90%'}} src={electronicsImage} alt='retailLogo' />
                 </Col>
             </Row>
         </Container>
