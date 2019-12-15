@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <NavBar></NavBar>
-      <p>Hello World!</p>
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet"></link>
+      <NavBar/>
     </div>
   );
 }
