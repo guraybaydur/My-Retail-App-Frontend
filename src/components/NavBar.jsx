@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import electronicsImage from '../assets/electronics1.jpg'
 import supermarketImage from '../assets/supermarket.jpg'
+import clothingImage from '../assets/clothing3.jpg'
 
 export default function NavBar() {
     return (
@@ -63,9 +64,14 @@ export default function NavBar() {
                     <img style={{width:'100%', height:'90%'}} src={electronicsImage} alt='retailLogo' />
                 </Col>
             </Row>
-            <Row>
+            <Row style={{height:'415px'}}>
                 <Col>
                     <img style={{width:'100%', height:'70%'}} src={supermarketImage} alt='retailLogo' />
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <img style={{width:'100%', height:'100%'}} src={clothingImage} alt='retailLogo' />
                 </Col>
             </Row>
         </Container>
