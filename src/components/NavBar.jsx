@@ -6,6 +6,7 @@ import { Container, Row, Col, Form, Navbar } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import electronicsImage from '../assets/electronics1.jpg'
+import supermarketImage from '../assets/supermarket.jpg'
 
 export default function NavBar() {
     return (
@@ -42,7 +43,7 @@ export default function NavBar() {
                     </Row>
                 </Col>
             </Row>
-            <Row style={{ padding: 0 }}>
+            <Row>
                 <Col>
                     <Navbar style={{ display: 'flex', justifyContent: 'space-between' }} bg="light" variant="light">
                         <Navbar.Brand href="#Woman">Woman</Navbar.Brand>
@@ -57,9 +58,14 @@ export default function NavBar() {
                     </Navbar>
                 </Col>
             </Row>
-            <Row style={{marginTop:'10px'}}>
+            <Row style={{height:'340px',marginTop:'10px'}}>
                 <Col>
                     <img style={{width:'100%', height:'90%'}} src={electronicsImage} alt='retailLogo' />
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <img style={{width:'100%', height:'70%'}} src={supermarketImage} alt='retailLogo' />
                 </Col>
             </Row>
         </Container>
