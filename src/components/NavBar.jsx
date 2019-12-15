@@ -36,7 +36,7 @@ export default function NavBar() {
                             <p style={{width:'90px'}}>Login</p>
                         </Col>
                         <Col xs={{offset:0,span:4}}>
-                            <p style={{width:'110px'}}>Shopping Cart</p>
+                            <p style={{width:'120px' ,paddingRight:'18px'}}>Shopping Cart</p>
                         </Col>
                     </Row>
                 </Col>
