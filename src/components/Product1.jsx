@@ -29,7 +29,7 @@ export default class Product1 extends Component {
                         </Card>
                     </Col>
                     <Col>
-
+                        
                     </Col>
                     <Col>
 
