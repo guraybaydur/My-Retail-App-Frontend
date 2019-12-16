@@ -20,9 +20,9 @@ function App() {
             <img style={{ width: '100%', height: '90%' }} src={electronicsImage} alt='retailLogo' />
           </Col>
         </Row>
-        <Row style={{ height: '415px' }}>
+        <Row style={{ height: '445px' }}>
           <Col>
-            <img style={{ width: '100%', height: '70%' }} src={supermarketImage} alt='retailLogo' />
+            <img style={{ width: '100%', height: '75%' }} src={supermarketImage} alt='retailLogo' />
           </Col>
         </Row>
         <Row>
