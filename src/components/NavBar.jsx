@@ -52,7 +52,7 @@ export default function NavBar() {
                         <Navbar.Brand href="#Clocks&Accessories">Clocks&Accessories</Navbar.Brand>
                         <Navbar.Brand href="#Cosmetics">Cosmetics</Navbar.Brand>
                         <Navbar.Brand href="#Home&Life">Home&Life</Navbar.Brand>
-                        <Navbar.Brand href="#Electronics">Electronics</Navbar.Brand>
+                        <Navbar.Brand href="electronics">Electronics</Navbar.Brand>
                         <Navbar.Brand href="#Supermarket">Supermarket</Navbar.Brand>
                     </Navbar>
                 </Col>
