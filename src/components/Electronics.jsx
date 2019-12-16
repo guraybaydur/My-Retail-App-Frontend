@@ -18,7 +18,7 @@ class Electronics extends Component {
     imgStyle2={height:'50%',width:'30%'}
     imgStyle3={height:'50%',width:'40%'}
     imgStyle4={height:'70%',width:'50%'}
-    buttonStyle={marginTop:'40px'}
+    buttonStyle={marginTop:'40px', backgroundColor:'orange'}
 
     goProduct = (prodNum) => {
         if(prodNum === 1){
@@ -36,7 +36,7 @@ class Electronics extends Component {
                             <Card.Body style={this.myStyle3}>
                                 <Card.Title>iPhone 11</Card.Title>
                                 <Card.Img style={this.imgStyle} variant="top" src={iphoneImage} />
-                                <Button onClick={() => this.goProduct(1)} variant="primary">Buy One From $699</Button>
+                                <Button onClick={() => this.goProduct(1)} variant="warning" style={{backgroundColor:'orange'}}>Buy One From $699</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -45,7 +45,7 @@ class Electronics extends Component {
                             <Card.Body style={this.myStyle3}>
                                 <Card.Title>MacBook Pro 13 inch</Card.Title>
                                 <Card.Img style={this.imgStyle} variant="top" src={macbookImage} />
-                                <Button variant="primary">Buy One From $5,999</Button>
+                                <Button  variant="warning" style={{backgroundColor:'orange'}}>Buy One From $5,999</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -54,7 +54,7 @@ class Electronics extends Component {
                             <Card.Body style={this.myStyle3}>
                                 <Card.Title>JBL Headphones</Card.Title>
                                 <Card.Img style={this.imgStyle2} variant="top" src={jblImage} />
-                                <Button variant="primary">Buy One From $129,95</Button>
+                                <Button  variant="warning" style={{backgroundColor:'orange'}}>Buy One From $129,95</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -65,7 +65,7 @@ class Electronics extends Component {
                             <Card.Body style={this.myStyle3}>
                                 <Card.Title>NBA 2K20</Card.Title>
                                 <Card.Img style={this.imgStyle3} variant="top" src={image2k} />
-                                <Button style={this.buttonStyle} variant="primary">Buy One From $29,99</Button>
+                                <Button style={this.buttonStyle}  variant="warning">Buy One From $29,99</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -74,7 +74,7 @@ class Electronics extends Component {
                             <Card.Body style={this.myStyle3}>
                                 <Card.Title>VR Headset</Card.Title>
                                 <Card.Img style={this.imgStyle4} variant="top" src={vrImage} />
-                                <Button variant="primary">Buy One From $599</Button>
+                                <Button  variant="warning" style={{backgroundColor:'orange'}}>Buy One From $599</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -83,7 +83,7 @@ class Electronics extends Component {
                             <Card.Body style={this.myStyle3}>
                                 <Card.Title>Hair Dryer</Card.Title>
                                 <Card.Img style={this.imgStyle3} variant="top" src={dryerImage} />   
-                                <Button style={this.buttonStyle} variant="primary">Buy One From $56,99</Button>
+                                <Button style={this.buttonStyle} variant="warning">Buy One From $56,99</Button>
                             </Card.Body>
                         </Card>
                     </Col>
