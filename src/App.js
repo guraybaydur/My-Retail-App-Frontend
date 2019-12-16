@@ -6,6 +6,12 @@ import electronicsImage from './assets/electronics1.jpg'
 import supermarketImage from './assets/supermarket.jpg'
 import clothingImage from './assets/clothing3.jpg'
 import { Container, Row, Col, Form, Navbar } from 'react-bootstrap'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
