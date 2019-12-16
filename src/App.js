@@ -9,6 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import Electronics from './components/Electronics';
+import Product1 from './components/Product1';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route exact path="/electronics">
             <Electronics />
+          </Route>
+          <Route exact path="/product1">
+            <Product1 />
           </Route>
         </Switch>
       </Router>

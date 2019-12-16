@@ -6,10 +6,10 @@ import jblImage from '../assets/jbl.jpg'
 import image2k from '../assets/2k.jpeg'
 import vrImage from '../assets/vr.jpeg'
 import dryerImage from '../assets/dryer.jpg'
+import { withRouter } from 'react-router-dom'
 
 
-
-export default class Electronics extends Component {
+class Electronics extends Component {
 
     myStyle = { marginBottom: '10px' }
     myStyle2 = { height: '300px' }
@@ -19,6 +19,14 @@ export default class Electronics extends Component {
     imgStyle3={height:'50%',width:'40%'}
     imgStyle4={height:'70%',width:'50%'}
     buttonStyle={marginTop:'40px'}
+
+    goProduct = (prodNum) => {
+        if(prodNum === 1){
+            console.log('product clicked!')
+            this.props.history.push('/product1');
+        }
+    };
+
     render() {
         return (
             <Container style={{ marginTop: '10px' }}>
@@ -28,7 +36,7 @@ export default class Electronics extends Component {
                             <Card.Body style={this.myStyle3}>
                                 <Card.Title>iPhone 11</Card.Title>
                                 <Card.Img style={this.imgStyle} variant="top" src={iphoneImage} />
-                                <Button variant="primary">Buy One From $699</Button>
+                                <Button onClick={() => this.goProduct(1)} variant="primary">Buy One From $699</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -84,3 +92,5 @@ export default class Electronics extends Component {
         )
     }
 }
+
+export default withRouter(Electronics);
