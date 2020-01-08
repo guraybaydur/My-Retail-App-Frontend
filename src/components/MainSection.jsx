@@ -13,19 +13,22 @@ class MainSection extends Component {
             this.props.history.push('/electronics');
         }
     };
+
+    imgStyle={ padding:'15px',border:'2px solid #E2E2E2',height:'400px',width:'100%',objectFit:'contain'} ;
+    rowStyle={ marginBottom:'10px'};
     
     render() {
         return (
             <Container>
                 <MainSectionImage imgClick={this.imageClicked}/>
-                <Row style={{ height: '445px' }}>
+                <Row style={this.rowStyle}>
                     <Col>
-                        <img style={{ width: '100%', height: '75%' }} src={supermarketImage} alt='retailLogo' />
+                        <img style={this.imgStyle} src={supermarketImage} alt='retailLogo' />
                     </Col>
                 </Row>
-                <Row>
+                <Row style={this.rowStyle}>
                     <Col>
-                        <img style={{ width: '100%', height: '100%' }} src={clothingImage} alt='retailLogo' />
+                        <img style={this.imgStyle} src={clothingImage} alt='retailLogo' />
                     </Col>
                 </Row>
             </Container>
